@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cfcf95b2-6d2f-4ad6-8c88-33c8fab15543" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/advent19.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07/amplifier.py" afterDir="false" />
+    </list>
+    <list id="0ab999bd-386b-4c25-9ba0-5e5aacd94ba1" name="Revert &quot;first commit&quot;" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="owlz84 &lt;phy2sll@gmail.com&gt;" />
+        <option value="owlz84" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/owlz84/advent19" />
+      </set>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UU4EthH16hY17luq1bMmurFS9H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/05" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/05" />
+      <recent name="$PROJECT_DIR$/04" />
+      <recent name="$PROJECT_DIR$/03" />
+      <recent name="$PROJECT_DIR$/02" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/01" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.orbitmaps">
+    <configuration name="orbitmaps" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="advent19" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day06" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day06/orbitmaps.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="advent19" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/day06/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.orbitmaps" />
+        <item itemvalue="Python tests.Unittests in tests.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfcf95b2-6d2f-4ad6-8c88-33c8fab15543" name="Default Changelist" comment="" />
+      <changelist id="" name="Revert &quot;first commit&quot;" comment="" />
+      <changelist id="0ab999bd-386b-4c25-9ba0-5e5aacd94ba1" name="Revert &quot;first commit&quot;" comment="" />
+      <created>1575397731864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575397731864</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1576615468360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576615468360</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Revert &quot;first commit&quot;&#10;&#10;This reverts commit ec9aa492">
+      <created>1576616083029</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576616083029</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Revert &quot;first commit&quot;">
+      <created>1576616433454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576616433454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="Revert &quot;first commit&quot;&#10;&#10;This reverts commit ec9aa492" />
+    <MESSAGE value="Revert &quot;first commit&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;first commit&quot;" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" width="800" height="717" key="#Intentions" timestamp="1576574858658">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" width="800" height="717" key="#Intentions/0.23.1440.877@0.23.1440.877" timestamp="1576574858658" />
+    <state x="429" y="97" key="#Unittests_in_tests.py_(1)" timestamp="1576609598561">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="429" y="97" key="#Unittests_in_tests.py_(1)/0.23.1440.877@0.23.1440.877" timestamp="1576609598561" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576615264449">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1576615264449" />
+    <state x="450" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576612034028">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="450" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1576612034028" />
+    <state x="408" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576574432551">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="408" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1576574432551" />
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576615397583">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1576615397583" />
+    <state x="885" y="206" width="504" height="579" key="#xdebugger.evaluate" timestamp="1576613290139">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="885" y="206" width="504" height="579" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1576613290139" />
+    <state x="353" y="64" key="CommitChangelistDialog2" timestamp="1576616996522">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="353" y="64" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1576616996522" />
+    <state width="1419" height="284" key="GridCell.Tab.0.bottom" timestamp="1576616574425">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576616574425" />
+    <state width="1419" height="284" key="GridCell.Tab.0.center" timestamp="1576616574424">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576616574424" />
+    <state width="1419" height="284" key="GridCell.Tab.0.left" timestamp="1576616574424">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576616574424" />
+    <state width="1419" height="284" key="GridCell.Tab.0.right" timestamp="1576616574424">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576616574424" />
+    <state width="1419" height="284" key="GridCell.Tab.1.bottom" timestamp="1576616574426">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576616574426" />
+    <state width="1419" height="284" key="GridCell.Tab.1.center" timestamp="1576616574425">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1576616574425" />
+    <state width="1419" height="284" key="GridCell.Tab.1.left" timestamp="1576616574425">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1576616574425" />
+    <state width="1419" height="284" key="GridCell.Tab.1.right" timestamp="1576616574426">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="284" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1576616574426" />
+    <state x="535" y="179" key="RollbackChangesDialog" timestamp="1576834650845">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="535" y="179" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1576834650845" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1576616831248">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1576616831248" />
+    <state x="572" y="384" key="VCS.ChangelistChooser" timestamp="1576616501938">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="572" y="384" key="VCS.ChangelistChooser/0.23.1440.877@0.23.1440.877" timestamp="1576616501938" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1576616980622">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1576616980622" />
+    <state x="378" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576608738382">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="378" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877@0.23.1440.877" timestamp="1576608738382" />
+    <state x="284" y="203" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1576583464151">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="284" y="203" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877@0.23.1440.877" timestamp="1576583464151" />
+    <state x="542" y="333" key="git4idea.rebase.GitRebaseDialog" timestamp="1576616477054">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="542" y="333" key="git4idea.rebase.GitRebaseDialog/0.23.1440.877@0.23.1440.877" timestamp="1576616477054" />
+  </component>
+</project>
