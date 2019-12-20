@@ -5,6 +5,7 @@ from operator import mul, add, lt, eq
 class Computer:
     def __init__(self, program: str):
         self.run_ix = 0
+        self.cycles = 0
         self.input = list()
         self.input_counter = 0
         self.output = 0
@@ -29,7 +30,7 @@ class Computer:
         self.set_value(instruction.params[-1], mul(*instruction.values[:2]))
 
     def input_op(self, instruction) -> None:
-        self.set_value(instruction.params[-1], self.input[self.input_counter])
+        self.set_value(instruction.params[-1], self.input[min(len(self.input)-1, self.input_counter)])
         self.input_counter += 1
 
     def output_op(self, instruction) -> None:
@@ -83,6 +84,7 @@ class Computer:
             return [self.get_value(val, mode) for val, mode in zip(self.params, self.param_modes)]
 
     def run(self):
+        self.cycles = 0
         while self.run_ix < len(self.program):
             parsed_instruction = self.Instruction(self.program[self.run_ix], self.program)
             if parsed_instruction.code == 99:
@@ -91,3 +93,4 @@ class Computer:
             parsed_instruction.params = self.program[self.run_ix+1:][:parsed_instruction.length-1]
             self.run_ix += parsed_instruction.length
             op(parsed_instruction)
+            self.cycles += 1

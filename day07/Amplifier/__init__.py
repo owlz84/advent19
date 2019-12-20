@@ -1,2 +1,2 @@
 from .amplifier import Amplifier
-from .optimiser import Optimiser
+from .optimiser import Optimiser, FeedbackOptimiser
