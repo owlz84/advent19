@@ -1,11 +1,12 @@
-from typing import List, Type
+from typing import List
 from operator import mul, add, lt, eq
 
 
 class Computer:
     def __init__(self, program: str):
         self.run_ix = 0
-        self.input = 0
+        self.input = list()
+        self.input_counter = 0
         self.output = 0
         self.program = [int(val) for val in program.split(",")]
         self.ops = [
@@ -14,6 +15,9 @@ class Computer:
             self.jump_if_true_op, self.jump_if_false_op,
             self.less_than_op, self.equal_to_op
         ]
+
+    def add_input(self, new_input: int):
+        self.input.append(new_input)
 
     def set_value(self, ix, val):
         self.program[ix] = val
@@ -25,7 +29,8 @@ class Computer:
         self.set_value(instruction.params[-1], mul(*instruction.values[:2]))
 
     def input_op(self, instruction) -> None:
-        self.set_value(instruction.params[-1], self.input)
+        self.set_value(instruction.params[-1], self.input[self.input_counter])
+        self.input_counter += 1
 
     def output_op(self, instruction) -> None:
         self.output = instruction.values[0]

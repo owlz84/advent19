@@ -22,7 +22,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
 
     def test_inputoutput(self):
         computer = Computer("3,0,4,0,99")
-        computer.input = 1337
+        computer.add_input(1337)
         computer.run()
         self.assertEqual(1337, computer.output)
 
@@ -30,7 +30,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
         with open("day05/data/full_program", "r") as fh:
             test_data = fh.read()
         computer = Computer(test_data)
-        computer.input = 1
+        computer.add_input(1)
         computer.run()
         self.assertEqual(5346030, computer.output)
 
@@ -40,7 +40,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                 test_cases = zip([7, 8, 9], [0, 1, 0])
                 for test_input, expected_outcome in test_cases:
                     computer = Computer(test_data)
-                    computer.input = test_input
+                    computer.add_input(test_input)
                     computer.run()
                     self.assertEqual(expected_outcome, computer.output)
 
@@ -50,7 +50,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                 test_cases = zip([7, 8, 9], [1, 0, 0])
                 for test_input, expected_outcome in test_cases:
                     computer = Computer(test_data)
-                    computer.input = test_input
+                    computer.add_input(test_input)
                     computer.run()
                     self.assertEqual(expected_outcome, computer.output)
 
@@ -60,7 +60,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                 test_cases = zip([0, 1, -1], [0, 1, 1])
                 for test_input, expected_outcome in test_cases:
                     computer = Computer(test_data)
-                    computer.input = test_input
+                    computer.add_input(test_input)
                     computer.run()
                     self.assertEqual(expected_outcome, computer.output)
 
@@ -70,7 +70,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
             test_cases = zip([7, 8, 9], [999, 1000, 1001])
             for test_input, expected_outcome in test_cases:
                 computer = Computer(test_data)
-                computer.input = test_input
+                computer.add_input(test_input)
                 computer.run()
                 self.assertEqual(expected_outcome, computer.output)
 
