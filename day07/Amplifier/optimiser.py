@@ -26,6 +26,7 @@ class Optimiser:
 class FeedbackOptimiser:
     def __init__(self, software: str, n_amps: int, phase_range: List[int]):
         self.software = software
+        self.n_amps = n_amps
         self.trials = list(permutations(phase_range, n_amps))
         self.amplifiers = list()
         self.results = list()
@@ -33,15 +34,10 @@ class FeedbackOptimiser:
     def optimise(self):
         for phase_seq in self.trials:
             amplifiers = [Amplifier(self.software, phase) for phase in phase_seq]
-            signals = list()
-            signal = None
-            cycles = -1
-            while cycles != 0:
-                for amplifier in amplifiers:
-                    signal = amplifier(signal if signal else 0)
-                cycles = sum([amplifier.computer.cycles for amplifier in amplifiers])
-            signals.append(signal)
-            self.results.append((signals[-1], phase_seq))
+            for ix, amplifier in enumerate(amplifiers):
+                amplifiers[ix].target = amplifiers[(ix + 1) % self.n_amps].coro
+            amplifiers[0](0)
+            self.results.append((amplifiers[4].computer.output, phase_seq))
 
     @property
     def best(self):
