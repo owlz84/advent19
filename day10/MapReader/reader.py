@@ -13,8 +13,6 @@ class MapReader:
         ]
         self.pairwise_angles = defaultdict(set)
         self.sweep_angles = defaultdict(list)
-        self.radial_distance_from_best = defaultdict(list)
-        self.current_angle = -(pi / 2)
 
     @property
     def dx_dy(self):
