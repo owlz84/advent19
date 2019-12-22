@@ -30,6 +30,7 @@ class MapReader:
         for x1, y1, x2, y2, dx, dy in self.dx_dy:
             theta = atan2(dy, dx)
             self.pairwise_angles[(x1, y1)].add(theta)
+        return self
             
     def calc_sweep_angles(self):
         x0, y0 = self.best_location
@@ -41,6 +42,7 @@ class MapReader:
                 asteroids = self.sweep_angles[theta]
                 asteroids.append((r, (x, y)))
                 self.sweep_angles[theta] = sorted(asteroids)
+        return self
 
     @property
     def n_visible(self):
@@ -66,10 +68,8 @@ class MapReader:
         while not done:
             for theta in sorted(self.sweep_angles.keys()):
                 r, coord = self.sweep_angles[theta].pop(0)
-                print(shots_fired, theta, r, coord)
                 shots_fired += 1
                 if shots_fired == n_shots:
                     done = True
                     break
         return coord
-

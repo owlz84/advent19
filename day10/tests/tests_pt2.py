@@ -9,8 +9,7 @@ class MapScanTest5(unittest.TestCase):
 
     def test_map_best(self):
         map_reader = MapReader(self.test_input)
-        map_reader.calc_pairwise_angles()
-        map_reader.calc_sweep_angles()
+        map_reader.calc_pairwise_angles().calc_sweep_angles()
         self.assertEqual((8, 2), map_reader.destroy_them_with_lasers(200))
 
 
