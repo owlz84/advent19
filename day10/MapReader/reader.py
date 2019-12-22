@@ -13,6 +13,7 @@ class MapReader:
         ]
         self.pairwise_angles = defaultdict(set)
         self.sweep_angles = defaultdict(list)
+        self.offset_angle = -(pi/2)
 
     @property
     def dx_dy(self):
@@ -34,7 +35,7 @@ class MapReader:
         x0, y0 = self.best_location
         for x, y in self.asteroids:
             dx, dy = x0 - x, y0 - y
-            theta = (atan2(dy, dx) - (pi/2)) % (2*pi)
+            theta = (atan2(dy, dx) - self.offset_angle) % (2*pi)
             r = sqrt(dx**2 + dy**2)
             if not r == 0:
                 asteroids = self.sweep_angles[theta]
