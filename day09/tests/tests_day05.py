@@ -1,6 +1,6 @@
 import unittest
 from glob import glob
-from day07.OpcodeComputer import Computer
+from day09.OpcodeComputer import Computer
 
 
 class OpcodeComputerTestCase(unittest.TestCase):
@@ -32,7 +32,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
             computer.run().send(1337)
         except StopIteration:
             pass
-        self.assertEqual(1337, computer.output)
+        self.assertEqual(1337, computer.output[-1])
 
     def test_day05_part01_fullprogram(self):
         with open("../../day05/data/full_program", "r") as fh:
@@ -42,7 +42,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
             computer.run().send(1)
         except StopIteration:
             pass
-        self.assertEqual(5346030, computer.output)
+        self.assertEqual(5346030, computer.output[-1])
 
     def test_day05_part02_equality(self):
         with open("../../day05/data/day05equalitytest01", "r") as fh:
@@ -54,7 +54,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                         computer.run().send(test_input)
                     except StopIteration:
                         pass
-                    self.assertEqual(expected_outcome, computer.output)
+                    self.assertEqual(expected_outcome, computer.output[-1])
 
     def test_day05_part02_inequality(self):
         with open("../../day05/data/day05equalitytest02", "r") as fh:
@@ -66,7 +66,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                         computer.run().send(test_input)
                     except StopIteration:
                         pass
-                    self.assertEqual(expected_outcome, computer.output)
+                    self.assertEqual(expected_outcome, computer.output[-1])
 
     def test_day05_part02_jumps(self):
         with open("../../day05/data/day05jumptests", "r") as fh:
@@ -78,7 +78,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                         computer.run().send(test_input)
                     except StopIteration:
                         pass
-                    self.assertEqual(expected_outcome, computer.output)
+                    self.assertEqual(expected_outcome, computer.output[-1])
 
     def test_day05_part02_bigtest(self):
         with open("../../day05/data/day05part02test", "r") as fh:
@@ -90,7 +90,7 @@ class OpcodeComputerTestCase(unittest.TestCase):
                     computer.run().send(test_input)
                 except StopIteration:
                     pass
-                self.assertEqual(expected_outcome, computer.output)
+                self.assertEqual(expected_outcome, computer.output[-1])
 
 
 if __name__ == '__main__':
