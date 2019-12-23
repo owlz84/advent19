@@ -1,6 +1,6 @@
 import unittest
 from glob import glob
-from day09.OpcodeComputer import Computer
+from day09.IntcodeComputer import Computer
 
 
 class OpcodeComputerTestCase(unittest.TestCase):

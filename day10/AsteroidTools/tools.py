@@ -59,7 +59,7 @@ class LaserGun:
         done = False
         while not done:
             for theta in sorted(self.target_angles.keys()):
-                r, target = self.target_angles[theta].pop(0)
+                _, target = self.target_angles[theta].pop(0)
                 shots_fired += 1
                 if shots_fired == n_shots:
                     done = True

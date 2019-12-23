@@ -1,5 +1,5 @@
 import unittest
-from day09.OpcodeComputer import Computer
+from day09.IntcodeComputer import Computer
 
 
 class BoostTestCase(unittest.TestCase):
