@@ -1,4 +1,4 @@
-from day10.MapReader import MapReader
+from day10.AsteroidTools import MapReader
 
 
 if __name__ == "__main__":

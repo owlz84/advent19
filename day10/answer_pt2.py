@@ -1,5 +1,5 @@
 from math import pi
-from day10.MapReader import MapReader, LaserGun
+from day10.AsteroidTools import MapReader, LaserGun
 
 
 if __name__ == "__main__":

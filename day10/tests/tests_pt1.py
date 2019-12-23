@@ -1,5 +1,5 @@
 import unittest
-from day10.MapReader import MapReader
+from day10.AsteroidTools import MapReader
 
 
 class MapScanTest1(unittest.TestCase):
