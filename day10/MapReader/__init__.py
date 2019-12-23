@@ -1,1 +1,1 @@
-from .reader import MapReader
+from .reader import MapReader, LaserGun
