@@ -1,4 +1,5 @@
-from typing import List, Type, Tuple
+from __future__ import annotations
+from typing import List, Tuple
 from collections import defaultdict
 from math import sqrt, atan2, pi
 
@@ -17,20 +18,20 @@ class Asteroid:
         self._coord = coord
         self.pairwise_angles = set()
 
-    def add_pairwise_angle(self, asteroid) -> None:
+    def add_pairwise_angle(self, asteroid: Asteroid) -> None:
         theta = atan2(*self.delta(asteroid))
         self.pairwise_angles.add(theta)
 
     @property
-    def coord(self):
+    def coord(self) -> Tuple[int, int]:
         return self._coord()
 
-    def delta(self, asteroid) -> Tuple[float, float]:
+    def delta(self, asteroid: Asteroid) -> Tuple[float, float]:
         x, y = asteroid.coord
         return self._coord.x - x, self._coord.y - y
 
     @property
-    def n_visible_asteroids(self):
+    def n_visible_asteroids(self) -> int:
         return len(self.pairwise_angles)
 
 
@@ -41,7 +42,7 @@ class LaserGun:
         self.phase = phase
         self.target_angles = defaultdict(list)
 
-    def calc_target_angles(self):
+    def calc_target_angles(self) -> None:
         for asteroid in self.asteroids:
             dx, dy = self.location.delta(asteroid)
             theta = (atan2(dy, dx) + self.phase) % (2*pi)
@@ -51,7 +52,7 @@ class LaserGun:
                 asteroids.append((r, asteroid))
                 self.target_angles[theta] = sorted(asteroids)
 
-    def destroy_them_with_lasers(self, n_shots: int):
+    def destroy_them_with_lasers(self, n_shots: int) -> Asteroid:
         self.target_angles.clear()
         self.calc_target_angles()
         shots_fired = 0
@@ -75,7 +76,7 @@ class MapReader:
             for colix, val in enumerate(rw) if val == "#"
         ]
 
-    def calc_pairwise_angles(self):
+    def calc_pairwise_angles(self) -> None:
         for root_asteroid in self.asteroids:
             root_asteroid.pairwise_angles.clear()
             for asteroid in self.asteroids:
@@ -83,12 +84,12 @@ class MapReader:
                     root_asteroid.add_pairwise_angle(asteroid)
 
     @property
-    def best_location(self):
+    def best_location(self) -> Asteroid:
         self.calc_pairwise_angles()
         return sorted(self.asteroids, key=lambda x: x.n_visible_asteroids)[-1]
 
     @property
-    def translated_map(self):
+    def translated_map(self) -> List[List[int]]:
         xdim, ydim = self.dims
         self.calc_pairwise_angles()
         all_pairwise_visible = defaultdict(int)
