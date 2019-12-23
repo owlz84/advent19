@@ -48,9 +48,8 @@ class LaserGun:
             theta = (atan2(dy, dx) + self.phase) % (2*pi)
             r = sqrt(dx**2 + dy**2)
             if not r == 0:
-                asteroids = self.target_angles[theta]
-                asteroids.append((r, asteroid))
-                self.target_angles[theta] = sorted(asteroids)
+                self.target_angles[theta].append((r, asteroid))
+                self.target_angles[theta].sort()
 
     def destroy_them_with_lasers(self, n_shots: int) -> Asteroid:
         self.target_angles.clear()
