@@ -15,8 +15,8 @@ class Formula:
 
     @property
     def edges(self):
-        rhs_elem, rhs_ratio = self.rhs[0]
-        return [(rhs_elem, lh_elem, dict(ratio=(rhs_ratio, lh_ratio))) for lh_elem, lh_ratio in self.lhs]
+        rhs_elem, rhs_qty = self.rhs[0]
+        return [(rhs_elem, lh_elem, dict(ratio=(rhs_qty, lh_qty))) for lh_elem, lh_qty in self.lhs]
 
 
 class Calculator:
