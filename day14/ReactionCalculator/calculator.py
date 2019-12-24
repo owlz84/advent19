@@ -65,7 +65,3 @@ class Calculator:
         required = self.ore_requirement(min_fuel)
         print(f"producing {min_fuel} unit(s) of fuel requires {required} unit(s) of ore")
         return min_fuel
-
-
-
-
