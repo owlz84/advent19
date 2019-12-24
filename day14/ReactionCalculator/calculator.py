@@ -1,3 +1,4 @@
+from typing import List, Tuple
 import networkx as nx
 from itertools import chain
 from math import ceil
@@ -9,22 +10,21 @@ class Formula:
         self.rhs = self.parse(rhs)
 
     @staticmethod
-    def parse(unit):
+    def parse(unit) -> List[Tuple[str, int]]:
         return [(k, int(v)) for v, k in [
                 tuple(unit.split(" ")) for unit in unit.split(", ")]]
 
     @property
-    def edges(self):
+    def edges(self) -> List[Tuple[str, str, dict]]:
         rhs_elem, rhs_qty = self.rhs[0]
         return [(rhs_elem, lh_elem, dict(ratio=(rhs_qty, lh_qty))) for lh_elem, lh_qty in self.lhs]
 
 
 class Calculator:
-    def __init__(self, formula_inputs):
+    def __init__(self, formula_inputs: List[str]):
         self.formulae = [Formula(*formula_input.split(" => ")) for formula_input in formula_inputs]
         self.dependency_graph = nx.DiGraph()
         self.dependency_graph.add_edges_from(list(chain.from_iterable(formula.edges for formula in self.formulae)))
-        self.raws = None
 
     def ore_requirement(self, fuel_units: int = 1) -> int:
         for node in nx.topological_sort(self.dependency_graph):
