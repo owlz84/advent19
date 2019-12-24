@@ -7,9 +7,9 @@ class TestCase1(unittest.TestCase):
         with open("../data/pt1_test1", "r") as fh:
             self.nanofactory_output = fh.read().splitlines()
 
-    def test_ratio(self):
+    def test_fuel_per_trillion_ore(self):
         calculator = Calculator(self.nanofactory_output)
-        self.assertEqual(31, calculator.ore_requirement())
+        self.assertEqual(34482758620, calculator.fuel_per_qty_ore(int(1e12)))
 
 
 class TestCase2(unittest.TestCase):
@@ -17,9 +17,9 @@ class TestCase2(unittest.TestCase):
         with open("../data/pt1_test2", "r") as fh:
             self.nanofactory_output = fh.read().splitlines()
 
-    def test_ratio(self):
+    def test_fuel_per_trillion_ore(self):
         calculator = Calculator(self.nanofactory_output)
-        self.assertEqual(165, calculator.ore_requirement())
+        self.assertEqual(6323777402, calculator.fuel_per_qty_ore(int(1e12)))
 
 
 class TestCase3(unittest.TestCase):
@@ -27,9 +27,9 @@ class TestCase3(unittest.TestCase):
         with open("../data/pt1_test3", "r") as fh:
             self.nanofactory_output = fh.read().splitlines()
 
-    def test_ratio(self):
+    def test_fuel_per_trillion_ore(self):
         calculator = Calculator(self.nanofactory_output)
-        self.assertEqual(13312, calculator.ore_requirement())
+        self.assertEqual(82892753, calculator.fuel_per_qty_ore(int(1e12)))
 
 
 class TestCase4(unittest.TestCase):
@@ -37,9 +37,9 @@ class TestCase4(unittest.TestCase):
         with open("../data/pt1_test4", "r") as fh:
             self.nanofactory_output = fh.read().splitlines()
 
-    def test_ratio(self):
+    def test_fuel_per_trillion_ore(self):
         calculator = Calculator(self.nanofactory_output)
-        self.assertEqual(180697, calculator.ore_requirement())
+        self.assertEqual(5586022, calculator.fuel_per_qty_ore(int(1e12)))
 
 
 class TestCase5(unittest.TestCase):
@@ -47,9 +47,9 @@ class TestCase5(unittest.TestCase):
         with open("../data/pt1_test5", "r") as fh:
             self.nanofactory_output = fh.read().splitlines()
 
-    def test_ratio(self):
+    def test_fuel_per_trillion_ore(self):
         calculator = Calculator(self.nanofactory_output)
-        self.assertEqual(2210736, calculator.ore_requirement())
+        self.assertEqual(460664, calculator.fuel_per_qty_ore(int(1e12)))
 
 
 if __name__ == '__main__':
