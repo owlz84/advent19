@@ -65,5 +65,22 @@ class TestCase03(unittest.TestCase):
         self.assertEqual(True, False)
 
 
+class TestCase04(unittest.TestCase):
+    def setUp(self) -> None:
+        with open("../data/pt1_test4", "r") as fh:
+            self.maze_map = fh.read()
+
+    def test_shortest_path(self):
+        navigator = Navigator(self.maze_map)
+        navigator.build_graph()
+        navigator.generate_summary_graph()
+        with open("test4.gv", "w+") as fh:
+            nx.drawing.nx_agraph.write_dot(navigator.summary_graph, fh)
+
+        render('dot', 'png', 'test4.gv')
+
+        self.assertEqual(True, False)
+
+
 if __name__ == '__main__':
     unittest.main()
